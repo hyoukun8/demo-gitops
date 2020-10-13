@@ -5,8 +5,6 @@ metadata:
   namespace: flux
   annotations:
     flux.weave.works/automated: 'true'
-  labels:
-    app: flux
 spec:
   selector:
     matchLabels:
