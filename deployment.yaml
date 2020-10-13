@@ -6,7 +6,7 @@ metadata:
 apiVersion: apps/v1 # for versions before 1.9.0 use apps/v1beta2
 kind: Deployment
 metadata:
-  name: nginx-deployment
+  name: nginx-gitops
   namespace: gitops-demo
   annotations:
     flux.weave.works/automated: 'true'
