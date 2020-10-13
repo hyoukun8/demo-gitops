@@ -8,6 +8,8 @@ kind: Deployment
 metadata:
   name: nginx-deployment
   namespace: gitops-demo
+  annotations:
+    flux.weave.works/automated: 'true'
 spec:
   selector:
     matchLabels:
@@ -20,6 +22,6 @@ spec:
     spec:
       containers:
       - name: nginx
-        image: openshift-nginx:stable
+        image: twalter/openshift-nginx
         ports:
         - containerPort: 80
